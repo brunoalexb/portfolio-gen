@@ -7,47 +7,26 @@
     <meta name="author" content="Generation Brasil">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+
+    <!-- Link para a Folha de Estilo da Página - CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Meu perfil</title>
 </head>
-<body>
-    <header>
-        <div id="header_content">
-            <div id="titulo">
-                <h1>Bruno Alexandre</h1>
-            </div>
 
-            <div id="menu">
-                <nav>
-                    <ul id="menu">
-                        <li>
-                            <a href="index.html"> Home </a>
-                        </li>
-                        <li>
-                            <a href="contato.html"> Contato </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-
-        </div>    
-    </header>
-
-
-   
 	<body>
 
 		<!-- Cabeçalho da Página (header) -->
 		<header>
 
 			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
+			<div id="header_content" class="flex">
 
 				<!-- Titulo do Cabeçalho -->
 				<div id="titulo">
 
 					<!-- Seu nome -->
-					<h1>Generation Brasil</h1>
+					<h1>Bruno Alexandre</h1>
 
 				</div>
 
@@ -79,18 +58,20 @@
 		<main>
 
 			<!-- Seção Sobre você -->
-			<section id="about">
+			<section id="about" class="flex_start">
 
 				<!-- Título da Seção -->
-				<h2>Sobre a Generation Brasil</h2>
+				<h2>Sobre mim</h2>
 
 				<!-- Conteúdo da Seção -->
-				<div id="conteudo">
+				<div id="conteudo" class="flex">
 
 					<!-- Imagem do criador do conteúdo -->
 					<img
-						src="./assets/img/user_01.svg"
+						src="./assets/img/profile3.jpg"
 						alt="Foto do criador desse conteudo"
+
+                        class="img-profile"
 					/>
 
 					<!-- Texto sobre o criador do conteúdo -->
@@ -126,13 +107,13 @@
 			</section>
 
 			<!-- Seção contendo um vídeo de sua preferência -->
-			<section id="video">
+			<section id="video" class="flex-start">
 
 				<!-- Título da Seção -->
 				<h2>Meu vídeo favorito:</h2>
 
 				<!-- Vídeo da Seção -->
-				<div id="youtube">
+				<div id="youtube" class="flex">
 
 					<iframe
 						width="560"
@@ -151,19 +132,18 @@
 		</main>
 
 		<!-- Rodapé da Página (footer) -->
-		<footer>
+		<footer class="flex">
 
-			<!-- Seção de Contato - Redes Sociais-->
-			<section id="redes_sociais">
+            <section id="redes_sociais">
 
 				<a href="">
-					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
 				</a>
 				<a href="">
-					<img src="assets/img/github.svg" alt="Github" />
+					<img src="assets/img/github.svg" alt="Github" class="social_icon"/>
 				</a>
 				<a href="">
-					<img src="assets/img/instagram.svg" alt="Instagram" />
+					<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
 				</a>
 
 			</section>
